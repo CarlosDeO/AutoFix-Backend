@@ -17,7 +17,8 @@ const jsonParser = bodyParser.json();
 app.use(jsonParser);
 
 // imports 
-const {router: tripRouter} = require('./trips/routes')
+const {router: fixsRouter} = require('./fixs/routes');
+const {router: carsRouter} = require('./cars/routes');
 const { router: usersRouter } = require('./users/routes');
 const {localStrategy, jwtStrategy } = require('./auth/Strategies');
 const {router: authRouter} = require('./auth/routes');
@@ -46,8 +47,9 @@ const jwtAuth = passport.authenticate('jwt', { session: false });
 
 app.use(express.static("public"));
 
-app.use('/api/trips', jwtAuth, tripRouter);
+app.use('/api/cars', jwtAuth, carsRouter);
 app.use('/api/users', usersRouter);
+app.use('/api/fixs', jwtAuth, fixsRouter)
 app.use('/api/auth', authRouter);
 
 // Loggin
