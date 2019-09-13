@@ -4,7 +4,7 @@
 
 <p>This repo is the backend to my Fullstack web application <a href="https://auto-fix.herokuapp.com">AutoFix</a></p>
 
-<h2>Technologys</h2>
+<h2>Technologies</h2>
 
 <ul>
 	<li>Node.js</li>
