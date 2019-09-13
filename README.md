@@ -2,7 +2,7 @@
 
 <h2>DESCRIPTION</h2> 
 
-<p>This repo is the backend to my Fullstack web application <a href="https://auto-fix.herokuapp.com">AutoFix</a></p>
+<p>This repo is the API server to my Fullstack web application <a href="https://auto-fix.herokuapp.com">AutoFix</a></p>
 
 <h2>Technologies</h2>
 
